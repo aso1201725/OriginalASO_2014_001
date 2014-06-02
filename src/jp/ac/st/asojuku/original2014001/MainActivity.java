@@ -8,7 +8,6 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.View;
 import android.widget.Button;
-import android.widget.EditText;
 
 public class MainActivity extends Activity implements
 View.OnClickListener{
@@ -32,12 +31,11 @@ View.OnClickListener{
 
 	@Override
 	public void onClick(View v) {
+		try{
 		// TODO 自動生成されたメソッド・スタブ
 		switch(v.getId()){ //どのボタンが押されたか判定
 		case R.id.btnOK: //btnMsgが押された
-		//エディットテキストから入力内容を取り出す
-			EditText etv = (EditText)findViewById(R.id.edtName);
-			String inputMsg = etv.getText().toString();
+
 
 			//Randomクラスのインスタンスを作る
 			Random rnd =  new Random();
@@ -76,9 +74,14 @@ View.OnClickListener{
 				//次画面のアクティビティ起動
 				startActivity(intent);
 				break;
-	}
+			}
 		}
+	}catch(Error e){
+		e.printStackTrace();
 	}
+
+
+		}
 
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {

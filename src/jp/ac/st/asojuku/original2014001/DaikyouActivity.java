@@ -1,5 +1,6 @@
 package jp.ac.st.asojuku.original2014001;
 
+
 import android.app.Activity;
 import android.os.Bundle;
 
@@ -11,5 +12,12 @@ public class DaikyouActivity extends Activity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.daikyou_activity);
 	}
+
+	@Override
+	protected void onResume() {
+		// TODO 自動生成されたメソッド・スタブ
+		super.onResume();
+	}
+
 
 }
