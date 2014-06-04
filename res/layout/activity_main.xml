@@ -16,13 +16,33 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="120dp"
         android:orientation="vertical" >
-
-        <TextView
-            android:id="@+id/TextView"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="おみくじ" />
     </LinearLayout>
+
+    <TextView
+        android:id="@+id/TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"
+        android:text="おみくじ" />
+
+    <TextView
+        android:id="@+id/txvMsg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/imageView1"
+        android:layout_below="@+id/TextView"
+        android:layout_marginTop="15dp"
+        android:text="名前を入力してください。" />
+
+    <EditText
+        android:id="@+id/edtName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/linearLayout1"
+        android:layout_alignLeft="@+id/txvMsg"
+        android:ems="10" />
 
     <Button
         android:id="@+id/btnOK"
@@ -30,7 +50,6 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/linearLayout1"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="32dp"
         android:text="スタート" />
 
     <ImageView
@@ -39,7 +58,6 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/btnOK"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="15dp"
         android:scaleType="fitXY"
         android:src="@drawable/main" />
 
